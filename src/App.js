@@ -58,15 +58,15 @@ function App() {
   //   }
   // };
 
-  const handleFetchAllUsers = async () => {
-    try {
-      const response = await axios.get("http://localhost:8080/api/users/");
-      setAllUsers(response.data);
-    } catch (error) {
-      console.error("Error fetching users:", error);
-      alert("Failed to fetch users");
-    }
-  };
+  // const handleFetchAllUsers = async () => {
+  //   try {
+  //     const response = await axios.get("http://localhost:8080/api/users/");
+  //     setAllUsers(response.data);
+  //   } catch (error) {
+  //     console.error("Error fetching users:", error);
+  //     alert("Failed to fetch users");
+  //   }
+  // };
 
   useEffect(() => {
     getAllUsers();
